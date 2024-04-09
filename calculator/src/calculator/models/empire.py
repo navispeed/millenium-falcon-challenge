@@ -1,6 +1,6 @@
 from typing import TypedDict
 
-from calculator.src.calculator.models.bounty_hunter import BountyHunter
+from calculator.models.bounty_hunter import BountyHunter
 
 
 class Empire(TypedDict):

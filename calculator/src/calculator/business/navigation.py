@@ -1,11 +1,10 @@
 import functools
 import itertools
-import json
 from dataclasses import dataclass
 
-from calculator.src.calculator.business.routes import Routes
-from calculator.src.calculator.models.empire import Empire
-from calculator.src.calculator.models.falcon import Falcon
+from calculator.business.routes import Routes
+from calculator.models.empire import Empire
+from calculator.models.falcon import Falcon
 
 
 @dataclass
@@ -20,8 +19,8 @@ class NavigationResult:
 
 
 class Navigation:
-    def __init__(self, empire_json: str, falcon: Falcon, route: Routes):
-        self.empire: Empire = json.loads(empire_json)
+    def __init__(self, empire: Empire, falcon: Falcon, route: Routes):
+        self.empire: Empire = empire
         self.falcon = falcon
         self.route = route
 

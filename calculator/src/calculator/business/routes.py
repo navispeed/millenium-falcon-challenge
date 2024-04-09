@@ -14,8 +14,6 @@ class Routes:
         # noinspection PyTypeChecker
         self.__planet_to_index: dict[str, int] = dict([(routes, idx) for idx, routes in enumerate(self.__planets)])
 
-        print(self.__planets, self.__planet_to_index)
-
         self.__matrix: list = []
 
         for _ in self.__planets:

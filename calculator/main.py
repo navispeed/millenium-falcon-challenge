@@ -1,9 +1,9 @@
 import json
 
-from calculator.src.calculator.business import Navigation
-from calculator.src.calculator.business import Routes
-from calculator.src.calculator.models.empire import Empire
-from calculator.src.calculator.models import Falcon
+from calculator.business import Navigation
+from calculator.business import Routes
+from calculator.models.empire import Empire
+from calculator.models import Falcon
 
 LOCATION = "./"
 
