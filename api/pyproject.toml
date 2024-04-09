@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["Gregoire GUEMAS <gregoire.guemas@navispeed.eu>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+calculator = {git = "https://git@github.com/navispeed/millenium-falcon-challenge", subdirectory = "calculator"}
+fastapi = "^0.110.1"
+uvicorn = "^0.29.0"
+gunicorn = "^21.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
