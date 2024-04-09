@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "calculator"
+version = "0.1.0"
+description = ""
+authors = ["Grégoire Guémas <gregoire.guemas@navispeed.eu>"]
+readme = "README.md"
+package-mode = true
+packages = [{include = "calculator", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
