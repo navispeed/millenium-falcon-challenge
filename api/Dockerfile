@@ -13,6 +13,6 @@ COPY . /app/
 
 
 ENV PYTHONPATH="/app/src:$PYTHONPATH"
-ENV PORT=8000
+ENV PORT=8000 MAX_DURATION=3000
 
 CMD poetry run gunicorn -k uvicorn.workers.UvicornWorker api:app --bind 0.0.0.0:$PORT
