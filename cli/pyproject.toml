@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cli"
+version = "0.1.0"
+description = ""
+authors = ["Gregoire GUEMAS <gregoire.guemas@navispeed.eu>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+calculator = {path = "../calculator"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
