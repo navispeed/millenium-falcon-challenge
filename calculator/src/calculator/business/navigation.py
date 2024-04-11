@@ -25,6 +25,15 @@ class Navigation:
         self.__empire: Empire = empire
         self.__falcon = falcon
         self.__route = route
+        self.sanity_check()
+
+    def sanity_check(self):
+        assert self.__empire["countdown"]
+        assert self.__empire["bounty_hunters"]
+        assert self.__falcon["arrival"]
+        assert self.__falcon["autonomy"]
+        assert self.__falcon["departure"]
+        assert self.__falcon["routes_db"]
 
     @staticmethod
     def bounty_formula(count: int):
