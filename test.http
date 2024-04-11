@@ -1,8 +1,8 @@
-GET http://localhost:28000/route
+POST http://localhost:8000/navigate
 Content-Type: application/json
 
 {
-  "countdown": 9000000,
+  "countdown": 9,
   "bounty_hunters": [
     {
       "planet": "Hoth",

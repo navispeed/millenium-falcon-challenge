@@ -1,5 +1,6 @@
 import sqlite3
 from collections import namedtuple
+from copy import deepcopy
 
 from utils.path_util import resolve_path
 
@@ -28,6 +29,17 @@ class Routes:
             assert weigh > 0
             self.__matrix[self.__planet_to_index[src]][self.__planet_to_index[dest]] = weigh
             self.__matrix[self.__planet_to_index[dest]][self.__planet_to_index[src]] = weigh
+
+    @property
+    def matrix(self):
+        matrix = deepcopy(self.__matrix)
+        for i in range(len(matrix)):
+            matrix[i][i] = 0
+        return matrix
+
+    @property
+    def planets(self):
+        return self.__planets
 
     def get_planet_around(self, current_location: Location) -> list[int]:
         idx = self.get_planet_id(current_location)

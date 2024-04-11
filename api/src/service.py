@@ -14,5 +14,11 @@ class Service:
             self.__falcon: Falcon = json.load(fp)
         self.__routes = Routes(self.__falcon["routes_db"], falcon_json_location)
 
-    def navigate(self, empire: Empire) -> list[NavigationResult]:
-        return Navigation(empire, self.__falcon, self.__routes).find_route()
+    def navigate(self, empire: Empire) -> NavigationResult:
+        routes = Navigation(empire, self.__falcon, self.__routes).find_route()
+        if len(routes) == 0:
+            return NavigationResult([], -1, 0.)
+        return routes[0]
+
+    def route(self) -> tuple[list[list[int]], list[str]]:
+        return self.__routes.matrix, self.__routes.planets

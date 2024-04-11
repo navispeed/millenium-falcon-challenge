@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium Falcon Navigator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+</style>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Toolbar on the right -->
+        <div class="col-md-3 bg-dark text-white p-3">
+            <h2>Toolbar</h2>
+            <!-- Input textarea for JSON data -->
+            <textarea id="json-input" class="form-control mb-3" rows="5" placeholder="Paste JSON data here"></textarea>
+            <!-- Button to trigger JSON processing -->
+            <button id="process-json-btn" class="btn btn-primary">Process JSON</button>
+            <div id="path-details" class="mt-3">Please upload a JSON to see details
+
+            </div>
+        </div>
+        <!-- Main content area -->
+        <div class="col-md-9 p-0">
+            <nav class="navbar navbar-dark bg-dark">
+                <span class="navbar-brand mb-0 h1">Millennium Falcon Navigator</span>
+            </nav>
+            <!-- Graph component -->
+            <div id="graph-component" class="p-3">
+                <!-- Graph display goes here -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.2/cytoscape.min.js"></script>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>

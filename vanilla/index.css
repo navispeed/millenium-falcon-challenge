@@ -1,0 +1,11 @@
+/* Adjusting height for the graph component */
+#graph-component {
+    height: calc(100vh - 50px);
+    position: relative;
+}
+
+#path-details {
+    position: absolute;
+    bottom: 0;
+    margin: 1em;
+}
