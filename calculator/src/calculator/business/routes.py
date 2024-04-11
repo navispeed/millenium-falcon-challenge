@@ -54,7 +54,7 @@ class Routes:
             case _:
                 raise TypeError("current_location must be an integer or an str")
 
-    def get_planet_name(self, location : Location) -> str:
+    def get_planet_name(self, location: Location) -> str:
         match location:
             case int():
                 return self.__planets[location]

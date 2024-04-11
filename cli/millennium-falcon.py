@@ -10,7 +10,8 @@ from calculator.models.falcon import Falcon
 
 parser = argparse.ArgumentParser(
     prog='Millennium Falcon odds calculator',
-    description='Given the spaceship status and empire data, compute the odds based '
+    description='Given the spaceship status and empire data,'
+                ' compute the odds based '
                 'of all available paths.',
     epilog='May the force be with you')
 
