@@ -2,7 +2,7 @@ import sqlite3
 from collections import namedtuple
 from copy import deepcopy
 
-from utils.path_util import resolve_path
+from calculator.utils.path_util import resolve_path
 
 type Route = namedtuple("Route", ["src", "dst", "weigh"])
 type Location = int | str

@@ -10,10 +10,13 @@ files = []
 develop = false
 
 [package.source]
-type = "directory"
-url = "../calculator"
+type = "git"
+url = "https://git@github.com/navispeed/millenium-falcon-challenge"
+reference = "HEAD"
+resolved_reference = "cf8af665c01abbf52365919f731903a092a1c53f"
+subdirectory = "calculator"
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "35f5dda63396f91b165e3556b974b4ff609db4f432bd4620795189600689cf9b"
+content-hash = "c577bb9c36125e26e93eac71aea19c7d8f8bc6f0c83cf3ba78a29fabe51b603b"

@@ -12,6 +12,7 @@ class Service:
         assert os.path.exists(falcon_json_location)
         with open(falcon_json_location, "r") as fp:
             self.__falcon: Falcon = json.load(fp)
+        print(self.__falcon["routes_db"], falcon_json_location)
         self.__routes = Routes(self.__falcon["routes_db"], falcon_json_location)
 
     def navigate(self, empire: Empire) -> NavigationResult:

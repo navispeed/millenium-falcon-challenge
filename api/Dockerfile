@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install git -y
 
 WORKDIR /app
 
-COPY pyproject.toml pyproject.toml /app/
+COPY pyproject.toml poetry.lock /app/
 
 
 RUN pip install poetry && poetry install

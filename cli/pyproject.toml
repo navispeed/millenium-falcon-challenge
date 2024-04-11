@@ -8,7 +8,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
-calculator = {path = "../calculator"}
+calculator = {git = "https://git@github.com/navispeed/millenium-falcon-challenge", subdirectory = "calculator"}
 
 
 [build-system]

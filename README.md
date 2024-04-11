@@ -1,5 +1,19 @@
 # Developer Technical Test @ Dataiku
 
+## How to run me ? 
+
+### API + UI
+
+### CLI
+
+Simply:
+```
+cd cli
+pip install poetry
+poetry install
+```
+
+
 ## What are the odds?
 
 [A long time ago in a galaxy far away...](https://youtu.be/2EGHIxz-bwI)

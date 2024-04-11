@@ -44,7 +44,7 @@ develop = false
 type = "git"
 url = "https://git@github.com/navispeed/millenium-falcon-challenge"
 reference = "HEAD"
-resolved_reference = "db457fb0bb0631f92835d1eb3bef7f7c7a4266ef"
+resolved_reference = "cf8af665c01abbf52365919f731903a092a1c53f"
 subdirectory = "calculator"
 
 [[package]]
