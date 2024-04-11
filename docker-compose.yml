@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./examples:/examples:ro
+    environment:
+      - FALCON_FILE=/examples/example3/millennium-falcon.json
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./front:/usr/share/nginx/html
+    ports:
+      - "8001:80"

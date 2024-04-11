@@ -17,6 +17,13 @@ rnWorker api:app --bind 0.0.0.0:8000
 
 Then, open front/index.html in a web browser
 
+Or using docker-compose:
+```shell
+docker compose up
+```
+
+Then go on http://localhost:8001
+
 ### CLI
 
 Simply:
