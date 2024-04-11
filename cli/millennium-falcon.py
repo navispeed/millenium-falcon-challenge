@@ -37,4 +37,5 @@ if __name__ == '__main__':
         sys.exit(-1)
     if len(path_found) == 0:
         print("No routes available")
-    print(path_found[0])
+        sys.exit(-1)
+    print(path_found[0].odds)
