@@ -13,7 +13,7 @@ develop = false
 type = "git"
 url = "https://git@github.com/navispeed/millenium-falcon-challenge"
 reference = "HEAD"
-resolved_reference = "cf8af665c01abbf52365919f731903a092a1c53f"
+resolved_reference = "671329c38fc5d3fca8e8f329254e4b9cdd2da448"
 subdirectory = "calculator"
 
 [metadata]
